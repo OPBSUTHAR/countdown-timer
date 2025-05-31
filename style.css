@@ -163,3 +163,23 @@ h1 {
     margin-bottom: 10px;
   }
 }
+
+.footer {
+    margin-top: 30px; /* Creates space between the countdown timer section and the footer */
+    color: #ffffff; /* White text color to match the design */
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden; /* Ensures the sliding text doesn’t overflow the container */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    animation: slide 10s linear infinite; /* Applies the sliding animation */
+}
+
+/* Defines the sliding animation from right to left */
+@keyframes slide {
+    0% {
+        transform: translateX(100%); /* Starts the text from the right edge */
+    }
+    100% {
+        transform: translateX(-100%); /* Moves the text to the left edge */
+    }
+}
